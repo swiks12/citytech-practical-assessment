@@ -1,0 +1,17 @@
+//Write a program to calculate the total inversion of an array. The inversion of an array is defined as a pair of indices for which i < j and array[i] > array[j].
+
+function countInversions(arr) {
+    let inversionCount = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                inversionCount++;
+            }
+        }
+    }
+    return inversionCount;
+}
+
+const arr = [5, 4, 9, 6, 2];
+console.log("Total inversions:", countInversions(arr));
