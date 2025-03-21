@@ -15,3 +15,5 @@ function countInversions(arr) {
 
 const arr = [5, 4, 9, 6, 2];
 console.log("Total inversions:", countInversions(arr));
+
+//Output: Total inversions: 6
